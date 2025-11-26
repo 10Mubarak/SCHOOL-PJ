@@ -123,46 +123,47 @@ body {
 /* /* MOBILE NAV — behaves exactly like the hospital toggle */
 @media (max-width: 768px) {
 
-  .header-inner {
-    position: relative;
-  }
+    .header-inner {
+        position: relative;
+    }
 
-  /* hide desktop nav */
-  .nav {
-    display: none;
-    position: absolute;
-    top: 70px; /* drop below header */
-    left: 0;
-    width: 100%;
-    background: #fff;
-    flex-direction: column;
-    padding: 20px 0;
-    text-align: center;
-    gap: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    z-index: 999;
-  }
+    /* hide desktop nav */
+    .nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        /* drop below header */
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        padding: 20px 0;
+        text-align: center;
+        gap: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
 
-  /* show mobile nav */
-  .nav.show {
-    display: flex;
-  }
+    /* show mobile nav */
+    .nav.show {
+        display: flex;
+    }
 
-  /* mobile brand and toggle remain in header row */
-  .menu-btn {
-    display: block;
-    font-size: 28px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
+    /* mobile brand and toggle remain in header row */
+    .menu-btn {
+        display: block;
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
 
-  /* ensure header layout stays neat */
-  .header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+    /* ensure header layout stays neat */
+    .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 
@@ -196,7 +197,8 @@ body {
 
 .hero p {
     color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    word-wrap: break-word;
 }
 
 .hero .hero-ctas {
@@ -222,6 +224,14 @@ body {
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.12);
     color: var(--white)
+}
+
+.hero-image {
+    width: 360px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(2, 20, 40, 0.35);
 }
 
 /* Sections common */
@@ -362,6 +372,22 @@ body {
     text-decoration: none
 }
 
+/* Trust Icons */
+.trust-icons {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.9);
+    flex-wrap: wrap;
+}
+
+.trust-icons li {
+    background: rgba(255, 255, 255, 0.12);
+    padding: .4rem .6rem;
+    border-radius: 16px;
+}
+
 /* Utilities */
 .text-muted {
     color: var(--muted)
@@ -427,6 +453,20 @@ body {
 
     .gallery-grid img {
         height: 110px
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .trust-icons {
+        gap: 4px;
+    }
+
+    .trust-icons li {
+        padding: .3rem .4rem;
+        font-size: 0.9rem;
     }
 }
 
