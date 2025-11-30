@@ -591,6 +591,10 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
+    .diamond-grid {
+        gap: 8px;
+    }
 }
 
 /* Animation Keyframes */
